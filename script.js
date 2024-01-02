@@ -17,9 +17,12 @@ const library = [
 ];
 
 const numberOfBooksRead = () => {
-  // write your code here
+  // Filter the books with readingStatus as true and get the count
+  const readBooks = library.filter(book => book.readingStatus === true);
+
+  // Return the count of read books
+  return readBooks.length;
 };
 
-// Do not change the code below
-
+// Alert the number of books read
 alert(numberOfBooksRead());
